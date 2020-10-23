@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+  
+body {
+    background-image: url("yellow-brush-texture.jpg"); 
+    background-position: center; 
+    background-size: cover;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    justify-content: center;
+}
+
+.CONTAINER1 {
+    /* display: flex; */
+    min-height: 100vh;
+    flex-direction: column;
+    /* background-image: url("yellow-brush-texture.jpg");  */
+    /* background-position: center;  */
+    /* background-size: cover;  */
+    /* background-repeat: no-repeat;  */
+    position: relative;
+    padding-top: 30px;
+} 
+
+
+/* NAME LOGO TOP LEFT */
+
+.name1 {
+    /* BLUE color: rgb(105, 166, 240); */
+    color: white;
+    letter-spacing: 8px;
+    font-size: 30px;
+    font-weight: 100;
+    margin: 20px;
+}
+
+/* NAV BAR */
+.navbar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: rgba(29,33,200,0.5);
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 60px
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.navbar {
+    flex: 1; 
+}
+
+.nav_item {
+    background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 3px 3px;
+    color: #000;
+    text-decoration: none;
+}
+
+.header #navbar-toggle:checked ~ .menu {
+    visibility: visible;
+    opacity: 0.99;
+  }
+
+  /*  SIDEBAR */
+
+.sidebar {
+    width: 125px;
+    height: 100vh;
+    background: rgba(29,33,200,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.social-links {
+    width: 50px;
+    display: block;
+    margin: 210px auto 0;
+    text-align: center;
+}
+
+#linkedin > i  {
+    margin-bottom: 70px; 
+    color: white;
+}
+
+#linkedin > i:hover { 
+    transform: scale(1.5, 1.5)
+}
+
+#github > i {
+    margin-bottom: 70px; 
+    color: white; 
+}
+
+#github > i:hover { 
+    transform: scale(1.5, 1.5)
+}
+
+#mail > i {
+    margin-bottom: 70px; 
+    color: white;
+}
+
+#mail > i:hover { 
+    transform: scale(1.5, 1.5)
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-left: 600px;
+    margin-top: 110px;
+}
+
+.profile img{
+    display: flex;
+    width: 35%;
+    border-radius: 80%;
+}
+
+nav ul li a:hover {
+    opacity: 0.6;
+}
+
+/* LINE COLOR */
+:root {
+    --mainColor: #ff9800;
+}
+
+.text-container {
+    /* margin-left: 300px; */
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 600px;
+    height: 280px;
+    position: absolute;
+    left: 36%;
+    top: 55%;
+    transform: translateY(-50%);
+}
+  
+.text-container h3{
+    font-size: 60px;
+    font-weight: 100;
+    margin-top: 24px;
+    margin-bottom: 15px;
+}
+  
+
+  
+/*
+header {
+    width: 100%;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 90px;
+    overflow-y: hidden;
+    position: fixed;
+}
+*/
+
+
+
+/* PORTFOLIO */
+
+.container { 
+    width: 100%; 
+    display: flex;
+}
+
+.row { 
+    width: 400%; 
+    display: flex; 
+    flex-wrap: none; 
+    margin-top: 5px;
+    justify-content: space-evenly;
+    margin: 25px;
+}
+
+.row div { 
+    background-color:black;
+    padding: 10%;
+    border: 2px solid white; 
+    border-radius: 10px;
+    text-align: center;
+    color: red; 
+    transition: background-color 1s; 
+}
+
+.col { 
+    width: 33.33% 
+}

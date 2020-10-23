@@ -38,7 +38,6 @@ body {
 /* NAME LOGO TOP LEFT */
 
 .name1 {
-    /* BLUE color: rgb(105, 166, 240); */
     color: white;
     letter-spacing: 8px;
     font-size: 30px;
@@ -69,6 +68,10 @@ nav ul li a{
     font-weight: 100;
 }
 
+nav ul li a:hover {
+    opacity: 0.6;
+}
+
 .navbar {
     flex: 1; 
 }
@@ -87,7 +90,7 @@ nav ul li a{
     opacity: 0.99;
   }
 
-  /*  SIDEBAR */
+/*  SIDEBAR */
 
 .sidebar {
     width: 125px;
@@ -124,7 +127,8 @@ nav ul li a{
 }
 
 #mail > i {
-    margin-bottom: 70px; 
+    margin-bottom: 70px;
+    margin-left: -5px; 
     color: white;
 }
 
@@ -132,25 +136,24 @@ nav ul li a{
     transform: scale(1.5, 1.5)
 }
 
+/* Profile photo and box  */
 .profile {
     display: flex;
     align-items: center;
     justify-content: center; 
-    margin-left: 600px;
-    margin-top: 110px;
+    margin-left: 500px;
+    margin-top: 90px;
 }
 
 .profile img{
     display: flex;
     width: 35%;
-    border-radius: 80%;
+    border-radius: 90%;
 }
 
-nav ul li a:hover {
-    opacity: 0.6;
-}
 
-/* LINE COLOR */
+
+/* LINE COLOR FOR NAV BAR HEADINGS */
 :root {
     --mainColor: #ff9800;
 }
@@ -159,12 +162,13 @@ nav ul li a:hover {
     /* margin-left: 300px; */
     /* display: flex; */
     /* justify-content: center; */
-    width: 600px;
+    width: 800px;
     height: 280px;
     position: absolute;
-    left: 36%;
-    top: 55%;
+    left: 20%;
+    top: 50%;
     transform: translateY(-50%);
+    display: inline-block;
 }
   
 .text-container h3{
@@ -173,50 +177,55 @@ nav ul li a:hover {
     margin-top: 24px;
     margin-bottom: 15px;
 }
-  
 
-  
-/*
-header {
-    width: 100%;
-    height: 66px;
-    display: flex;
+section {
+    width: 50%;
+    margin-top: 100px;
+    margin-left: 310px;
+}
+
+h2 {
+    background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 3px 7px;
+    color: #000;
+    text-decoration: none;
+
+}
+/* Python trinket.io box on projects page */
+
+.trinket-container {
+    width: 500px;
+    height: 400px;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 90px;
-    overflow-y: hidden;
-    position: fixed;
+    justify-content: center;
+    margin-top: 10%;
+    margin-left: 15%;
+    display: inline-block;
 }
-*/
 
 
+/* download CV button on home screen */
 
-/* PORTFOLIO */
-
-.container { 
-    width: 100%; 
+.download-BTN {
     display: flex;
+    margin-left: 0%;
 }
 
-.row { 
-    width: 400%; 
-    display: flex; 
-    flex-wrap: none; 
-    margin-top: 5px;
-    justify-content: space-evenly;
-    margin: 25px;
+/* Button size and color */
+.btn {
+    background-color: rgb(44, 22, 110);
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
 }
 
-.row div { 
-    background-color:black;
-    padding: 10%;
-    border: 2px solid white; 
-    border-radius: 10px;
-    text-align: center;
-    color: red; 
-    transition: background-color 1s; 
+/* Darker background on mouse-over */
+.btn:hover {
+    background-color: rgb(86, 79, 139);
 }
 
-.col { 
-    width: 33.33% 
-}
+  
